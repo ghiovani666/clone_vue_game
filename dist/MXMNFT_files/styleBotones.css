@@ -1,0 +1,232 @@
+button[loading]:before {
+    background: rgba(0, 0, 0, 0) url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgxMDB2MTAwSDB6Ii8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTlFOUU5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTMwKSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iIzk4OTY5NyIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgzMCAxMDUuOTggNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjOUI5OTlBIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDYwIDc1Ljk4IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0EzQTFBMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCA2NSA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNBQkE5QUEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoMTIwIDU4LjY2IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0IyQjJCMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgxNTAgNTQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjQkFCOEI5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDE4MCA1MCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDMkMwQzEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE1MCA0NS45OCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDQkNCQ0IiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTEyMCA0MS4zNCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNEMkQyRDIiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDM1IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0RBREFEQSIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjAgMjQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTJFMkUyIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKC0zMCAtNS45OCA2NSkiLz48L3N2Zz4=") no-repeat
+}
+
+[nvue] button {
+    margin: 0
+}
+
+
+button {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 2.55555556;
+    border-radius: 5px;
+    -webkit-tap-highlight-color: transparent;
+    overflow: hidden;
+    color: #000;
+    background-color: #f8f8f8;
+    cursor: pointer
+}
+
+button[hidden] {
+    display: none !important
+}
+
+button:after {
+    content: " ";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid rgba(0, 0, 0, .2);
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    box-sizing: border-box;
+    border-radius: 10px
+}
+
+button[native] {
+    padding-left: 0;
+    padding-right: 0
+}
+
+button[native] .uni-button-cover-view-wrapper {
+    border: inherit;
+    border-color: inherit;
+    border-radius: inherit;
+    background-color: inherit
+}
+
+button[native] .uni-button-cover-view-inner {
+    padding-left: 14px;
+    padding-right: 14px
+}
+
+button uni-cover-view {
+    line-height: inherit;
+    white-space: inherit
+}
+
+button[type=default] {
+    color: #000;
+    background-color: #f8f8f8
+}
+
+button[type=primary] {
+    color: #fff;
+    background-color: #007aff
+}
+
+button[type=warn] {
+    color: #fff;
+    background-color: #e64340
+}
+
+button[disabled] {
+    color: hsla(0, 0%, 100%, .6);
+    cursor: not-allowed
+}
+
+button[disabled]:not([type]),
+button[disabled][type=default] {
+    color: rgba(0, 0, 0, .3);
+    background-color: #f7f7f7
+}
+
+button[disabled][type=primary] {
+    background-color: rgba(0, 122, 255, .6)
+}
+
+button[disabled][type=warn] {
+    background-color: #ec8b89
+}
+
+button[type=primary][plain] {
+    color: #007aff;
+    border: 1px solid #007aff;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+button[type=primary][plain][disabled] {
+    color: rgba(0, 0, 0, .2);
+    border-color: rgba(0, 0, 0, .2)
+}
+
+button[type=primary][plain]:after {
+    border-width: 0
+}
+
+button[type=default][plain] {
+    color: #353535;
+    border: 1px solid #353535;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+button[type=default][plain][disabled] {
+    color: rgba(0, 0, 0, .2);
+    border-color: rgba(0, 0, 0, .2)
+}
+
+button[type=default][plain]:after {
+    border-width: 0
+}
+
+button[plain] {
+    color: #353535;
+    border: 1px solid #353535;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+button[plain][disabled] {
+    color: rgba(0, 0, 0, .2);
+    border-color: rgba(0, 0, 0, .2)
+}
+
+button[plain]:after {
+    border-width: 0
+}
+
+button[plain][native] .uni-button-cover-view-inner {
+    padding: 0
+}
+
+button[type=warn][plain] {
+    color: #e64340;
+    border: 1px solid #e64340;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+button[type=warn][plain][disabled] {
+    color: rgba(0, 0, 0, .2);
+    border-color: rgba(0, 0, 0, .2)
+}
+
+button[type=warn][plain]:after {
+    border-width: 0
+}
+
+button[size=mini] {
+    display: inline-block;
+    line-height: 2.3;
+    font-size: 13px;
+    padding: 0 1.34em
+}
+
+button[size=mini][native] {
+    padding: 0
+}
+
+button[size=mini][native] .uni-button-cover-view-inner {
+    padding: 0 1.34em
+}
+
+button[loading]:not([disabled]) {
+    cursor: progress
+}
+
+button[loading]:before {
+    content: " ";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    -webkit-animation: uni-loading 1s steps(12) infinite;
+    animation: uni-loading 1s steps(12) infinite;
+    background-size: 100%
+}
+
+button[loading][type=primary] {
+    color: hsla(0, 0%, 100%, .6);
+    background-color: #0062cc
+}
+
+button[loading][type=primary][plain] {
+    color: #007aff;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+button[loading][type=default] {
+    color: rgba(0, 0, 0, .6);
+    background-color: #dedede
+}
+
+button[loading][type=default][plain] {
+    color: #353535;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+button[loading][type=warn] {
+    color: hsla(0, 0%, 100%, .6);
+    background-color: #ce3c39
+}
+
+button[loading][type=warn][plain] {
+    color: #e64340;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+button[loading][native]:before {
+    content: none
+}
